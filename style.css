@@ -1,0 +1,102 @@
+
+
+/* ======================== General Styles  ========================= */
+body {
+	padding:0;
+	margin:0;
+    text-align: center;
+    font-family: monospace;  
+   
+}
+
+/* ==================== Main ========================== */
+main{
+    background-color:rgba(0, 0, 0, 0.658);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* =================== StopWatch =================== */
+.stopwatch{
+    display: grid;
+    gap: 2rem;
+    background-color:black;
+    padding: 2rem 4rem;
+    color: rgba(245, 245, 245, 0.925);
+    border-radius: 0.4rem;
+    box-shadow: 0 1px 8px 5px rgba(236, 232, 232, 0.2), 0 6px 20px 0 rgba(235, 231, 231, 0.19);
+}
+.stopwatch p{
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin: 0 0;
+    cursor: default;
+}
+
+/* =================== Clock Time ========================= */
+#clock{
+    width: 12rem;
+    height: 12rem;
+    border: 3px solid rgba(255, 255, 255, 0.63);
+    font-size: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    letter-spacing: 2px;
+    color: rgba(245, 245, 245, 0.904);
+    box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor:default;
+}
+
+#seconds{
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+}
+#miliseconds{
+    font-size: 28px;
+    margin-top: 16px;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes ease {
+  from {padding: 2rem;}
+  to {padding: 0;}
+}
+
+/* ==================== buttons ========================== */
+button {
+    padding: 5px 8px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    background-color: rgba(245, 245, 245, 0.911);
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 4px;
+    color: black;
+    font-weight: 50;
+}
+
+
+#start:hover{
+    background-color: rgb(139, 190, 139);
+} 
+#stop:hover{
+    background-color: rgb(190, 126, 126);
+}
+
+#reset:hover{
+    background-color:rgb(211, 211, 143);
+}
+
+button:active {
+  background-color: rgba(128, 128, 128, 0.527);
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
